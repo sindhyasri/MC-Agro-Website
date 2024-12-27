@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell on MC Agro</title>
+    <link rel="icon" href="Icons/MC AGRO LOGO.png" type="image/x-icon" />
+
+    <style>
+      /* General Styles */
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Top Navigation */
+      .top-nav {
+          background-color: #4caf50;
+          color: white;
+          padding: 0.5rem;
+          text-align: center;
+      }
+
+      .top-nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          padding: 0;
+          margin: 0;
+      }
+
+      .top-nav a {
+          color: white;
+          text-decoration: none;
+      }
+
+      /* Main Navigation */
+      .main-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #ffffff;
+          padding: 1rem 2rem;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo h2 {
+          color: #4caf50;
+          margin: 0;
+      }
+
+      .nav-links {
+          display: flex;
+          gap: 1.5rem;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .nav-links a {
+          text-decoration: none;
+          color: #333;
+      }
+
+      .nav-links a:hover {
+          color: #4caf50;
+      }
+
+      /* Extras Section (Search Box and Language Selector) */
+      .extras {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+      }
+
+      .search-box {
+          padding: 0.5rem 1rem;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          outline: none;
+          transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      }
+
+      .search-box:focus {
+          border-color: #4eaa6f;
+          box-shadow: 0 0 5px rgba(78, 170, 111, 0.5);
+      }
+
+      .language-select {
+          padding: 0.5rem 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 0.9rem;
+          background-color: #ffffff;
+          cursor: pointer;
+          outline: none;
+          transition: border-color 0.3s ease-in-out;
+      }
+
+      .language-select:focus {
+          border-color: #4eaa6f;
+          box-shadow: 0 0 5px rgba(78, 170, 111, 0.5);
+      }
+
+      /* Main Container */
+      .container {
+          max-width: 600px;
+          margin: 2rem auto;
+          background-color: #ffffff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          padding: 1.5rem;
+      }
+
+      h2 {
+          font-size: 1.8rem;
+          color: #333;
+          margin-bottom: 1rem;
+          border-bottom: 2px solid #4eaa6f;
+          padding-bottom: 0.5rem;
+      }
+
+      /* Form Elements */
+      label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #555;
+          font-size: 0.9rem;
+      }
+
+      input, select, textarea {
+          width: 100%;
+          padding: 0.6rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 1rem;
+          transition: border-color 0.3s;
+      }
+
+      input:focus, select:focus, textarea:focus {
+          outline: none;
+          border-color: #4eaa6f;
+          box-shadow: 0 0 5px rgba(78, 170, 111, 0.3);
+      }
+
+      textarea {
+          resize: vertical;
+      }
+
+      /* Checkbox Group */
+      .checkbox-group {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+      }
+
+      .checkbox-group label {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.9rem;
+      }
+
+      .checkbox-group input {
+          width: auto;
+      }
+
+      /* Button Styles */
+      button {
+          background-color: #4eaa6f;
+          color: #ffffff;
+          border: none;
+          padding: 0.8rem;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 6px;
+          transition: background-color 0.3s;
+      }
+
+      button:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+      }
+
+      button:hover:not(:disabled) {
+          background-color: #3e8c5d;
+      }
+
+      /* Media Query for Responsiveness */
+      @media (max-width: 768px) {
+          .extras {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 0.5rem;
+          }
+
+          .search-box, 
+          .language-select {
+              width: 100%;
+          }
+      }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="sell.htm">Sell On MC Agro</a></li>
+            <li><a href="Bulk.htm">Bulk Order Inquiries</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>MC Agro Service</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="About.htm">Home</a></li>
+            <li><a href="Products.htm">Product List</a></li>
+            <li><a href="Contact.htm">Contact</a></li>
+            <li><a href="Review.htm">Reviews</a></li>
+        </ul>
+        <div class="extras">
+            <input type="text" placeholder="Search..." class="search-box">
+            <select class="language-select" aria-label="Select Language">
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="us">US English</option>
+                <option value="de">German</option>
+                <option value="ko">Korean</option>
+                <option value="es">Spanish</option>
+                <option value="th">Thai</option>
+                <option value="fr">French</option>
+                <option value="ca">Canadian French</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Sell on MC Agro</h2>
+        <form>
+            <!-- Name -->
+            <label for="name">Name <span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required aria-label="Name">
+
+            <!-- Email -->
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-label="Email">
+
+            <!-- Contact Number -->
+            <label for="mobileNo">Contact Number <span style="color: red;">*</span></label>
+            <input type="tel" id="mobileNo" name="mobileNo" placeholder="Enter your contact number" required pattern="[0-9]{10}" aria-label="Contact Number">
+
+            <!-- State -->
+            <label for="state">State <span style="color: red;">*</span></label>
+            <select id="state" name="state" required aria-label="State">
+                <option value="">Please Select</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+
+            <!-- Company Name -->
+            <label for="companyName">Company / Brand Name <span style="color: red;">*</span></label>
+            <input type="text" id="companyName" name="companyName" placeholder="Enter your company name" required aria-label="Company Name">
+
+            <!-- City -->
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" aria-label="City">
+
+            <!-- Website -->
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" placeholder="Enter your website URL" aria-label="Website">
+
+            <!-- Category of Products -->
+            <label>Category of Products <span style="color: red;">*</span></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="products" value="Nutrients" aria-label="Nutrients"> Nutrients</label>
+                <label><input type="checkbox" name="products" value="Fertilizers" aria-label="Fertilizers"> Fertilizers</label>
+                <label><input type="checkbox" name="products" value="Agro Chemicals" aria-label="Agro Chemicals"> Agro Chemicals</label>
+                <label><input type="checkbox" name="products" value="Agro Implements" aria-label="Agro Implements"> Agro Implements</label>
+                <label><input type="checkbox" name="products" value="Seeds" aria-label="Seeds"> Seeds</label>
+                <label><input type="checkbox" name="products" value="Others" aria-label="Others"> Others</label>
+            </div>
+
+            <!-- Category of Sellers -->
+            <label>Category of Sellers <span style="color: red;">*</span></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="sellers" value="Manufacturer" aria-label="Manufacturer"> Manufacturer</label>
+                <label><input type="checkbox" name="sellers" value="Distributor" aria-label="Distributor"> Distributor</label>
+            </div>
+
+            <!-- Additional Info -->
+            <label for="additionalInfo">Additional Info</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Add additional information..." aria-label="Additional Info"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" aria-label="Submit Form">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

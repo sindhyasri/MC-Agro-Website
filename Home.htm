@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>MC Agro Service</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Home.css">
+  <link rel="icon" href="Icons/MC AGRO LOGO.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="sell.htm">Sell On MC Agro</a></li>
+      <li><a href="Bulk.htm">Bulk Order Inquiries</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="logo">
+      <h2><a href="Home.htm">MC Agro Service</a></h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Home.htm">Home</a></li>
+      <li><a href="Products.htm">Product List</a></li>
+      <li><a href="Seeds.htm">Seeds</a></li>
+      <li><a href="Smart Farming.htm">Smart Farming</a></li>
+      <li><a href="Brands.htm">Brands</a></li>
+      <li><a href="Contact.htm">Contact Us</a></li>
+      <li><a href="Review.htm">Reviews</a></li>
+    </ul>
+    <div class="extras">
+      <input type="text" placeholder="Search..." class="search-box">
+      <select class="language-select">
+        <option value="en">English</option>
+        <option value="ta">Tamil</option>
+        <option value="us">US English</option>
+        <option value="de">German</option>
+        <option value="ko">Korean</option>
+        <option value="es">Spanish</option>
+        <option value="th">Thai</option>
+        <option value="fr">French</option>
+        <option value="ca">Canadian French</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Swiper Section -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Swiper/Crop.png" alt="Tractor"></div>
+      <div class="swiper-slide"><img src="Swiper/TechFarming.png" alt="Harvest"></div>
+      <div class="swiper-slide"><img src="Swiper/Crop (2).png" alt="Crops"></div>
+      <div class="swiper-slide"><img src="Swiper/Tractor (2).png" alt="Sunset"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to MC Agro Service</h1>
+      <p>Best Deals, Best Products, Just for You!</p>
+      <a href="Products.htm" class="shop-now-button">
+        <button>Shop Now</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-container">
+      <div class="category">
+        <img src="Images/1.jpg" alt="Agro Products">
+        <h3>Agro Products</h3>
+      </div>
+      <div class="category">
+        <img src="Images/2.webp" width="100%" height="300px" alt="Seeds">
+        <h3>Seeds</h3>
+      </div>
+      <div class="category">
+        <img src="Images/3.jpg" alt="Weeds">
+        <h3>Weeds</h3>
+      </div>
+      <div class="category">
+        <img src="Images/4.webp" height="300px" alt="Weeds">
+        <h3>Weeds</h3>
+      </div>
+      <div class="category">
+        <img src="Images/5.jpg" height="300px" alt="Weeds">
+        <h3>Weeds</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="flex flex-col md:flex-row px-4">
+      <!-- Left Section -->
+      <div class="w-full md:w-6/12">
+        <h1>MC Agro Service</h1>
+        <p class="text-justify text-gray-400 leading-6 mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p class="text-justify text-gray-400 leading-6 mt-3">
+          By integrating technology, MC Agro aims to improve the overall agricultural ecosystem.
+        </p>
+      </div>
+
+      <!-- Right Section -->
+      <div class="w-full md:w-5/12 mt-5 md:mt-0">
+        <h4 class="text-lg font-light text-mediumGreen">Quick Links</h4>
+        <ul>
+          <li><a href="Home.htm" class="text-gray-400 hover:text-white">About Us</a></li>
+          <li><a href="Contact.htm" class="text-gray-400 hover:text-white">Contact Us</a></li>
+        </ul>
+
+        <h4 class="text-lg font-light text-mediumGreen">Contact Us</h4>
+        <ul>
+          <li><a href="tel:9345805108" class="bg-green-600 text-white px-3 py-1.5 rounded-md">Phone: 958 560 4737</a></li>
+          <li><a href="wp:9345805108" class="">WhatsApp: 637 487 6280</a></li>
+          <li><a href="mcagroservice@gmail.com" class="">Mail : mcagroservice@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2024 MC Agro Service. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+      speed: 1000,
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="icon" href="Icons/MC AGRO LOGO.png" type="image/x-icon" />
+
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+      
+      .reviews {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .reviews h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      
+      .reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      
+      .review-card {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .review-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 40px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      
+      .review-info {
+        text-align: center;
+      }
+      
+      .review-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .review-rating {
+        font-size: 18px;
+        color: #ff9900;
+        margin-bottom: 10px;
+      }
+      
+      .review-text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+      }
+      
+      .review-form {
+        margin-top: 50px;
+        text-align: center;
+      }
+      
+      .review-form input,
+      .review-form textarea,
+      .review-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      .review-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .review-form button:hover {
+        background-color: #0056b3;
+      }
+      </style>
+</head>
+<body>
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+          <div class="review-card">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/78/43/25/1000_F_378432516_6IlKiCLDAqSCGcfc6o8VqWhND51XqfFm.jpg" alt="User Photo" class="review-img">
+            <div class="review-info">
+              <h3>John Doe</h3>
+              <p class="review-rating">⭐⭐⭐⭐⭐</p>
+              <p class="review-text">This product is amazing! The quality exceeded my expectations. Highly recommend it to others.</p>
+            </div>
+          </div>
+          <div class="review-card">
+            <img src="https://thumbs.dreamstime.com/z/passport-photo-portrait-asian-smiling-woman-109538764.jpg" alt="User Photo" class="review-img">
+            <div class="review-info">
+              <h3>Jane Smith</h3>
+              <p class="review-rating">⭐⭐⭐⭐</p>
+              <p class="review-text">Very good, but I think the packaging could be improved. Otherwise, great value for the price.</p>
+            </div>
+          </div>
+          <!-- Add more reviews here -->
+        </div>
+      
+        <!-- Add Review Form -->
+        <div class="review-form">
+          <h3>Leave a Review</h3>
+          <form id="review-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="review" placeholder="Your Review" required></textarea>
+            <select id="rating" required>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+      </section>
+     <script>
+        document.getElementById("review-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const review = document.getElementById("review").value;
+  const rating = document.getElementById("rating").value;
+
+  const reviewSection = document.querySelector(".reviews-container");
+
+  const newReview = document.createElement("div");
+  newReview.classList.add("review-card");
+
+  newReview.innerHTML = `
+    <img src="https://via.placeholder.com/150" alt="User Photo" class="review-img">
+    <div class="review-info">
+      <h3>${name}</h3>
+      <p class="review-rating">${"⭐".repeat(rating)}</p>
+      <p class="review-text">${review}</p>
+    </div>
+  `;
+
+  reviewSection.appendChild(newReview);
+
+  // Clear form
+  document.getElementById("name").value = "";
+  document.getElementById("review").value = "";
+  document.getElementById("rating").value = "1";
+});
+
+     </script> 
+</body>
+</html>

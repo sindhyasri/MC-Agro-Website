@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .about-section {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .about-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .about-team {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .about-team {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-team {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-team {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .team-member {
+            background-color: #f8f8f8;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        
+        .team-member p {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h1>Brands</h1>
+            <!-- <p class="Brands-discription">
+                Welcome to our e-commerce store! We offer a wide range of high-quality products at unbeatable prices.
+                Our mission is to provide our customers with the best online shopping experience possible.
+            </p> -->
+            <div class="about-team">
+                <h2>Our Team</h2>
+                <div class="team-member" id="team-member-1">
+                    <img src="Images/bayerLogo.webp" alt="Team Member 1">
+                
+                </div>
+                <div class="team-member" id="team-member-2">
+                    <img src="Images/fmcLogo.webp" alt="Team Member 2">
+                    
+                </div>
+                <div class="team-member" id="team-member-3">
+                    <img src="Images/seminisLogo.webp" alt="Team Member 3">
+                
+                </div>
+                <div class="team-member" id="team-member-4">
+                    <img src="Images/syngentaLogo.webp" alt="Team Member 4">
+                
+                </div>
+                <div class="team-member" id="team-member-5">
+                    <img src="Images/SWAL-logo.webp" alt="Team Member 5">
+        
+                </div>
+                <div class="team-member" id="team-member-6">
+                    <img src="Images/uplLogo.webp" alt="Team Member 6">
+                
+                </div>
+                <div class="team-member" id="team-member-7">
+                    <img src="Images/adama1Logo.webp" alt="Team Member 7">
+                
+                </div>
+                <div class="team-member" id="team-member-8">
+                    <img src="Images/biostadtLogo.webp" alt="Team Member 8">             
+                </div>
+                <div class="team-member" id="team-member-9">
+                    <img src="Images/piLogo.webp" alt="Team Member 9">
+                    
+                </div>
+                <div class="team-member" id="team-member-10">
+                    <img src="Images/julogo.jpg" alt="Team Member 10">
+                    
+                </div>
+                <div class="team-member" id="team-member-10">
+                    <img src="Images/basfLogo.webp" alt="Team Member 10">
+                    
+                </div>
+                <div class="team-member" id="team-member-10">
+                    <img src="Images/crystalLogo.webp" alt="Team Member 10">
+                    
+                </div>
+               
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
